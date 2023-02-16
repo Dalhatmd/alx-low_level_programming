@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+	*A code that prints out a sentence using the puts command*/
+	puts ("\"Programming lis like building a multilingual puzzle\n");
+	return 0;
+}
+
+
