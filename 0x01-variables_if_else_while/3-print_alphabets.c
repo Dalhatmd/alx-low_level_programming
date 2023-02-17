@@ -4,19 +4,13 @@
  *
  * Return: Always 0 (success)
  */
-int main()
+int main(void)
 {
-	char a[26] = "abcdefghijklmnopqrstuvwxyz";
-	char b[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char a[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int x;
 
-	int y;
-
-	for (x = 0,y = 0; x < 26; x++, y++)
-	{
+	for (x = 0; x < 52; x++)
 		putchar(a[x]);
-		putchar('\n');
-		putchar(b[y]);
-	}
+	putchar('\n');
 	return (0);
 }
