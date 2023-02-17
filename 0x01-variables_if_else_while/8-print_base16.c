@@ -6,12 +6,10 @@
  */
 int main(void)
 {
-	int x;
+	int x, y;
 
 	for (x = 48; x <= 57; x++)
 		putchar(x);
-	int y;
-
 	for (y = 65; y < 70; y++)
 		putchar(y);
 	putchar(10);
