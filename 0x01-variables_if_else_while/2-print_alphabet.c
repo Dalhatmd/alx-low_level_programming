@@ -11,6 +11,6 @@ int main(void)
 
 	for (x = 0; x <= 26; x++)
 		putchar(a[x]);
-	putchar('\n);
+	putchar('\n');
 	return (0);
 }
