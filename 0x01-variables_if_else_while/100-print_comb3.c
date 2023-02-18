@@ -19,6 +19,8 @@ int main(void)
 			{
 				putchar(b);
 				putchar(a);
+				if (b == 56 && a == 57)
+					break;
 				putchar(',');
 				putchar(' ');
 			}
@@ -26,5 +28,6 @@ int main(void)
 		}
 		b++;
 	}
+	putchar(10);
 	return (0);
 }
