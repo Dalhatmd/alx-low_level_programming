@@ -18,6 +18,7 @@ void times_table(void)
 			{
 				_putchar(32);
 				_putchar(mult + 48);
+			}
 			else
 			{
 				_putchar((mult / 10) + 48);
