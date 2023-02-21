@@ -10,7 +10,7 @@ void jack_bauer(void)
 	{
 		for (h2 = 48; h2 <= 57; h2++)
 		{
-			for (m1 = 48; m1 <= 50; m1++)
+			for (m1 = 48; m1 <= 53; m1++)
 			{
 				for (m2 = 48; m2 <= 57; m2++)
 				{
@@ -23,6 +23,5 @@ void jack_bauer(void)
 				}
 			}
 		}
-		_putchar(' ');
 	}
 }
