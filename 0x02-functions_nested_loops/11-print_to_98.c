@@ -7,7 +7,7 @@
  *
  * Return: Always 0 (success)
  */
-void print_to_98(int n);
+void print_to_98(int n)
 {
 	for (n ; n < 98; n++)
 	{
