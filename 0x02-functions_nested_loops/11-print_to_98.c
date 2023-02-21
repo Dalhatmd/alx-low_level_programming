@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main"
+#include "main.h"
 /**
  * print_to_98 - A function thag primts all numbers from n to 98 sequentially
  *
