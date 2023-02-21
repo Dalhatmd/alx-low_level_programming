@@ -6,11 +6,12 @@
  */
 int main(void)
 {
-	char ch[] = {'_','p','u','t','c','h','a','r'};
+	char ch[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
 
 	int i;
 
-	for (i = 0 ;i < 9; i++)
+	for (i = 0 ; i < 9; i++)
 		_putchar(ch[i]);
+	_putchar(10);
 	return (0);
 }
