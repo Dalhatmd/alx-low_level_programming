@@ -5,8 +5,9 @@ void _putchar(void)
 
         int i;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 10; i++){
 		putchar(ch[i]);
+	}
 }
 
 void print_alphabet(void)
@@ -15,3 +16,4 @@ void print_alphabet(void)
 		for (i = 'a'; i <= 'z'; i++)
 			putchar(i);
 		putchar(10);
+}
