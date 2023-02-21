@@ -11,13 +11,4 @@ void print_alphabet(void)
 		_putchar(i);
 	_putchar(10);
 }
-/**
- * main - Execution starts here
- *
- * Return: Always 0 (success)
- */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
+
