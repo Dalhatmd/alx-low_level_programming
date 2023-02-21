@@ -8,3 +8,10 @@ void _putchar(void)
 	for (i = 0; i < 10; i++)
 		putchar(ch[i]);
 }
+
+void print_alphabet(void)
+{
+	        int i;
+		for (i = 'a'; i <= 'z'; i++)
+			putchar(i);
+		putchar(10);
