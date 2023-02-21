@@ -1,4 +1,5 @@
-	
+#ifndef MAIN_H
+#define MAIN_H
 void _putchar(void)
 {
 	char ch[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\0'};
@@ -15,3 +16,4 @@ void print_alphabet(void)
 		for (i = 'a'; i <= 'z'; i++)
 			putchar(i);
 		putchar(10);
+#endif
