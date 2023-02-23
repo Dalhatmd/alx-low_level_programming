@@ -1,4 +1,4 @@
-#insert "main.h"
+#include "main.h"
 /**
  * mul - returns the product of multiplying two numbers
  *
