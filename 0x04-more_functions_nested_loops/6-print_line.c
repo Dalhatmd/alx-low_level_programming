@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 void print_line(int n)
 {
 	if (n <= 0)
