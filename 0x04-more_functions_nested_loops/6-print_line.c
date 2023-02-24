@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 /**
  * print_line - Prints an underscore by @n amount of times
  *
