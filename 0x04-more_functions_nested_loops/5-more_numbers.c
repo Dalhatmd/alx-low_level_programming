@@ -1,11 +1,11 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 /**
  * more_numbers - Prints numbers from 0 - 14 ten times
  */
 void more_numbers(void)
 {
-	int i, j, k;
+	int i, j;
 
 	i = 0;
 	while (i < 10)
