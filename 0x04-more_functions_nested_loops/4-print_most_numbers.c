@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_most_numbers - prints numbers between 0 and 9 but skips 2 and 4
  */
@@ -10,7 +11,7 @@ void print_most_numbers(void)
 	{
 		if (i == 50 || i == 52)
 			continue;
-		_putchar(i);
+		putchar(i);
 	}
-	_putchar(10);
+	putchar(10);
 }
