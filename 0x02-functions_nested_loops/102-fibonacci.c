@@ -18,7 +18,7 @@ int main(void)
 	next = num1 + num2;
 
 	printf("%ld, %ld", num1, num2);
-	for (i = 0; i <= n; ++i)
+	for (i = 0; i < n; ++i)
 	{
 		next = num1 + num2;
 		printf(" ,%ld", next);
