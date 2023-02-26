@@ -6,27 +6,24 @@
  */
 int main(void)
 {
-	int n, i, num1, num2;
+	int n, i;
 
-	unsigned long int next;
-	
-	n = 50;
-	num1 = 0;
-	num2 = 1;
+	long int num1, num2;
+
+	long int next;
+
+	n = 48;
+	num1 = 1;
+	num2 = 2;
 	next = num1 + num2;
 
-	printf("%d, %d, ", num1, num2);
-	for (i = 3; i <= n; ++i)
+	printf("%ld, %ld", num1, num2);
+	for (i = 0; i <= n; ++i)
 	{
-		printf("%lu", next);
-		if (i < n)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		next = num1 + num2;
+		printf(" ,%ld", next);
 		num1 = num2;
 		num2 = next;
-		next = num1 + num2;
 	}
 	putchar(10);
 	return (0);
