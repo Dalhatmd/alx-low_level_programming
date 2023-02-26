@@ -21,7 +21,7 @@ int main(void)
 	for (i = 0; i < n; ++i)
 	{
 		next = num1 + num2;
-		printf(" ,%ld", next);
+		printf(", %ld", next);
 		num1 = num2;
 		num2 = next;
 	}
