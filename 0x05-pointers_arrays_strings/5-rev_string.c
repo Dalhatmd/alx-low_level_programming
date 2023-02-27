@@ -17,9 +17,12 @@ void rev_string(char *s)
 
 	j = count - 1;
 
-	for (i = 0; i < count; i++)
+	i = 0;
+	while (i < count)
 	{
 		rev[i] = s[j];
 		j--;
+		i++;
 	}
+	rev[count + 1] = '\0';
 }
