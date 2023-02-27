@@ -8,9 +8,6 @@ void rev_string(char *s)
 {
 	int i, j, count;
 
-	char rev[1000];
-
-	char tmp[1000];
 
 	count = 0;
 
@@ -22,9 +19,8 @@ void rev_string(char *s)
 	i = 0;
 	while (i < count)
 	{
-		tmp[i] = s[j];
+		s[i] = s[j];
 		j--;
 		i++;
 	}
-	rev = tmp;
 }
