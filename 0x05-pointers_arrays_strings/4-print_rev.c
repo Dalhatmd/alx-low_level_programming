@@ -23,11 +23,11 @@ void print_rev(char *s)
 		j--;
 	}
 
-	for (j = 0; j < count + 1; j++)
+	for (j = 0; j < count; j++)
 	{
-		putchar(rev[j]);
-		if (j == count)
-			putchar('\0');
+		/*putchar(rev[j]);*/
+		/*if (j == count)*/
+			/*putchar('\0');*/
 	}
 	putchar(10);
 }
