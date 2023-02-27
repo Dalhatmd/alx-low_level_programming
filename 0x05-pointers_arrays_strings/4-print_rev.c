@@ -9,10 +9,10 @@ void print_rev(char *s)
 {
 	int i, j, count;
 
-	char rev[];
+	char rev[10000];
 
 	count = 0;
-	while (str[count] != '\0')
+	while (s[count] != '\0')
 		count++;
 
 	j = count - 1;
