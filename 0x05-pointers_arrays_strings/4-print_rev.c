@@ -26,6 +26,8 @@ void print_rev(char *s)
 	for (j = 0; j < count + 1; j++)
 	{
 		putchar(rev[j]);
+		if (j == count)
+			putchar('\0');
 	}
 	putchar(10);
 }
