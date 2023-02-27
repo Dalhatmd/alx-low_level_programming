@@ -27,4 +27,5 @@ void print_rev(char *s)
 	{
 		putchar(rev[j]);
 	}
+	putchar(10);
 }
