@@ -1,5 +1,5 @@
 #include "main.h"
-/** 
+/**
  * _strncat - concantenates 2 strings by @n bytes
  *
  * @dest: destination string
