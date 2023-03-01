@@ -23,4 +23,10 @@ char *_strcat(char *dest, char *src)
 		j++;
 	}
 
-	return (str3);
+	for (i = 0; str3[i] != '\0'; i++)
+	{
+		dest[i] = str3[i];
+	}
+	return (dest);
+
+}
