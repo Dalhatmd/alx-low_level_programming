@@ -1,30 +1,26 @@
 #include "main.h"
-/**
- * _strcat - Concantenates 2 strings
- *
- * @dest: destination string
- * @src: Source string
- *
- * Return: A string with @src concantenated to @dest
- */
 char *_strcat(char *dest, char *src)
 {
-	int count1, count2;
+	char str3[5000];
+	
+	int i, j;
 
-	count1 = 0;
-	count2 = 0;
+	i = 0;
+	j = 0;
 
-
-	while ((*dest + count) != '\0')
-		count1++;
-
-	while (count 2 >= 0)
+	while (src[i] != '\0')
 	{
-		*(dest + count) = *(src + count2);
-		if (*(src + count2) == 0)
-			break;
-		count1++;
-		count2++;
+		str3[j] = src[i];
+		i++;
+		j++;
 	}
-	return (dest);
-}
+
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		str3[j] = dest[i];
+		i++;
+		j++;
+	}
+
+	return (str3);
