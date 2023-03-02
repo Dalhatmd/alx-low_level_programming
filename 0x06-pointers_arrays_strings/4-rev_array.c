@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 /**
  * reverse_array - Reverses an array
  *
@@ -14,18 +13,19 @@ void reverse_array(int *a, int n)
 
 	j = 0;
 
-	if (n == 0)
-		exit(0);
-
-	for (i = n-1; i >= 0; i--)
+	if (n != 0)
 	{
-		b[j] = a[i];
-		j++;
-	}
 
-	i = 0;
-	for (i = 0; i < n; i++)
-	{
-		a[i] = b[i];
+		for (i = n-1; i >= 0; i--)
+		{
+			b[j] = a[i];
+			j++;
+		}
+
+		i = 0;
+		for (i = 0; i < n; i++)
+		{
+			a[i] = b[i];
+		}
 	}
 }
