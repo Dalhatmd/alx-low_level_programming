@@ -8,8 +8,8 @@
  */
 char *rot13(char *s)
 {
-	char a[] = "abcdefghijklmABCDEFGHIJKLM";
-	char b[] = "nopqrstuvwxyzNOPQRSTUVWXYZ";
+	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	int i, j;
 
