@@ -8,8 +8,6 @@
  */
 char *leet(char *s)
 {
-	char *leet(char *s)
-{
 	int count = 0, i;
 	int lower[] = {97, 101, 111, 116, 108};
 	int upper[] = {65, 69, 79, 84, 76};
