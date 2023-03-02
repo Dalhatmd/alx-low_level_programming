@@ -8,20 +8,25 @@
  */
 char *leet(char *s)
 {
-	int i, j;
+	char *leet(char *s)
+{
+	int count = 0, i;
+	int lower[] = {97, 101, 111, 116, 108};
+	int upper[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49};
 
-	char result[] = s;
-
-	char a[] = "AaEeOoTtLl";
-	char b[] = "4433007711";
-
-	for (i = 0; result[i] != '\0'; i++)
+	while (*(s + count) != '\0')
 	{
-		for (j = 0; a[j] != '\0'; j++)
+		for (i = 0; i < 5; i++)
 		{
-			if (result[i] == a[j])
-				result[i] = b[j];
+			if (*(s + count) == lower[i] || *(s + count) == upper[i])
+			{
+				*(s + count) = numbers[i];
+				break;
+			}
 		}
+		count++;
 	}
-	return (result);
+
+	return (s);
 }
