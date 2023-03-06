@@ -3,6 +3,7 @@
 /**
  * print_diagsums - prints the sum of diagonals in a 2d array
  * @a: input array
+ * @size: size of the array
  */
 void print_diagsums(int *a, int size)
 {
