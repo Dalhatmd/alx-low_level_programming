@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _stlrpbrk - Checks for the first occurence of a string
+ * _strpbrk - Checks for the first occurence of a string
  *
  * @s: first input string
  * @accept: second in put string
