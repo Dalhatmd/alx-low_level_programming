@@ -1,4 +1,13 @@
 #include "main.h"
+/**
+ * _memset - fills a string memory with a byte constant
+ *
+ * @s: input string
+ * @b: byte constant
+ * @n: number of bytes to be filled
+ *
+ * Return: Pointer to string s
+ */
 char *_memset(char *s, char b, unsigned int n)
 {
 	int i;
