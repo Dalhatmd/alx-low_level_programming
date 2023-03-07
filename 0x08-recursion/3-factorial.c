@@ -4,11 +4,11 @@
  *
  * @n: input number
  *
- * Return: Factorial of n
+ * Return: Factorial of n or -1 if there is an error
  */
 int factorial(int n)
 {
-	if ( n < 0)
+	if (n < 0)
 		return (-1);
 	if (n == 0 || n == 1)
 		return (1);
