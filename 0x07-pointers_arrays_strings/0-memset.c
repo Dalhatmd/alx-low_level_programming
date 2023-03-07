@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * memset - fills a string memory with a byte constant
+ * _memset - fills a string memory with a byte constant
  *
  * @s: input string
  * @b: byte constant
