@@ -13,7 +13,13 @@ int _sqrt_recursion(int n)
 	else if (n == 0 || n == 1)
 		return (n);
 	else
-		sqrt_helper(n, n / 2);
+	{
+		int res = sqrt_helper(n, n / 2);
+		if (res * res == n)
+			return (res);
+		else
+			return (-1);
+	}
 }
 /**
  * sqrt_helper - Helper function for finding the square root
