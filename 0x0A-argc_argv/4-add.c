@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 /**
- * main - adds positive integers 
+ * main - adds positive integers
  *
  * @argc: number of arguments
  * @argv: array of arguments
