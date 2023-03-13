@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
-/** alloc_grid - allocates memory for a 2d array
+/** 
+ * alloc_grid - allocates memory for a 2d array
  *
  * @width: width of the array
  * @height: height od the array
@@ -25,9 +26,9 @@ int **alloc_grid(int width, int height)
 		{
 			for (j = 0; j < i; j++)
 			{
-				free (a[j]);
+				free(a[j]);
 			}
-			free (a);
+			free(a);
 			return (NULL);
 		}
 		for (j = 0; j < width; j++)
