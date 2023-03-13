@@ -5,26 +5,39 @@
  *
  * @ac: number of arguments
  * @av: array of arguments
+ *
+ * Return: concatenated string
  */
 char *argstostr(int ac, char **av)
 {
-	int i, count;
+	int i, j, count, pos;
 
-	char **a;
+	char *result;
+
+	count = 0;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
 	for (i = 0; i < ac; i++)
-		count++;
+	{
+		for (j = 0; av[i][j] != '\0'; j++)
+			count++;
+	}
+	result = malloc(sizeof(char) * count + ac);
 
-	a = malloc(sizeof(char *) * count);
-	if (a == NULL)
+	if (result == NULL)
 		return (NULL);
 
+	pos = 0;
 	for (i = 0; i < ac; i++)
 	{
-		a[i] = av[i];
+		for (j = 0; av[i][j] != '\0'; j++)
+			result[pos + j] = av[i][j];
+		result[pos + j] = '\n';
+		pos += j + 1;
 	}
-	return (*a);
+	result[pos] = '\0';
+
+	return (result);
 }
