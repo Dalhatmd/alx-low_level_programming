@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * calloc - allocates memory
+ * _calloc - allocates memory
  *
  * @nmemb: bytes to be allocated
  * @size: size of data type
@@ -18,7 +18,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	
+
 	ptr = malloc(nmemb * size);
 	if (ptr == NULL)
 		return (NULL);
