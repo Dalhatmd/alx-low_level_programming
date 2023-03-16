@@ -1,7 +1,8 @@
 #include"main.h"
 #include <stdlib.h>
 /**
- * malloc_checked - creates a space in memory and checks if it has been created
+ * malloc_checked - creates a space in memory and checks if it has been 
+ * created
  *
  * @b: space to be checked
  *
