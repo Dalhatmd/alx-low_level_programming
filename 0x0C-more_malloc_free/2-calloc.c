@@ -1,10 +1,18 @@
 #include "main.h"
 #include <stdlib.h>
+/**
+ * calloc - allocates memory
+ *
+ * @nmemb: bytes to be allocated
+ * @size: size of data type
+ *
+ * Return: void pointer
+ */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ptr;
 
-	unsigned char p;
+	char *p;
 
 	unsigned int i;
 
@@ -15,7 +23,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (ptr == NULL)
 		return (NULL);
 
-	p = (unsigned char)ptr;
+	p = ptr;
 
 	for (i = 0; i < nmemb *size; i++)
 		p[i] = 0;
