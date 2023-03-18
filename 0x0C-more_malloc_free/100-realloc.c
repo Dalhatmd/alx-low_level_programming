@@ -5,7 +5,7 @@
  *
  * @ptr: pointer to the block of memory
  * @old_size: old size of memory
- * new_size: new size of memory
+ * @new_size: new size of memory
  *
  * Return: pointer to new block of memory
  */
@@ -30,8 +30,8 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (new_ptr);
 	}
 	if (new_size == old_size)
-		return ptr;
-	
+		return (ptr);
+
 	if (new_size == 0 && ptr)
 	{
 		free(ptr);
