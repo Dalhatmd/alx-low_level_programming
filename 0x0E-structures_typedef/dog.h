@@ -1,12 +1,19 @@
 #ifndef DOG_H
 #define DOG_H
 /**
+ * dog_t - alias for dog
+ */
+typedef struct dog dog_t;
+
+
+/**
  * struct dog - a struct for dogs
  *
  * @name: name of dog
  * @age: age of dog
  * @owner: owner of dog
  */
+
 struct dog
 {
 	char *name;
