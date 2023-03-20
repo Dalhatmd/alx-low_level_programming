@@ -1,4 +1,8 @@
 #ifndef SUM
+/**
+ * file: 4-sum.h
+ * Desc: Header file that computes the sum of 2 numbers
+ */
 
 #define SUM(X, Y) ((X) + (Y))
 
