@@ -13,13 +13,15 @@ void print_all(const char * const format, ...)
 
 	char *s;
 
-	i = 0;
+	int index;
+
+	index = 0;
 
 	va_start(args, format);
 
-	while (format[i])
+	while (format[index] && format)
 	{
-		switch (format[i])
+		switch (format[index])
 		{
 			case 'c':
 				c = va_arg(args, int);
@@ -35,19 +37,18 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				s = va_arg(args, char*);
-				if (!s)
+				if (s == NULL)
 					printf("(nil)");
-				else
-					printf("%s", s);
+				printf("%s", s);
 				break;
 			default:
-				i++;
+				index++;
 				continue;
 
 		}
-		if (format[i + 1])
+		if (format[index + 1])
 			printf(", ");
-		i++;
+		index++;
 	}
 	va_end(args);
 
