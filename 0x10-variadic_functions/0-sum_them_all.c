@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 /**
- * sum_them_all - sums all integers passed 
+ * sum_them_all - sums all integers passed
  *
  * @n: number of integers
  *
