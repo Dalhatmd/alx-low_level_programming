@@ -5,6 +5,7 @@
  * print_numbers - prints numbers entered as input
  *
  * @n: number of input
+ * @separator: character used for separation
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
