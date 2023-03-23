@@ -1,6 +1,11 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
+/**
+ * print_all - prints anything
+ *
+ * @format: format of what will be printed
+ */
 void print_all(const char * const format, ...)
 {
 	va_list args;
@@ -54,5 +59,3 @@ void print_all(const char * const format, ...)
 
 	printf("\n");
 }
-
-
