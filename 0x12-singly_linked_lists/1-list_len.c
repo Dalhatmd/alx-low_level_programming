@@ -4,7 +4,7 @@
  *
  * @h: list to be counted
  *
- * @Return: number of items in list
+ * Return: number of items in list
  */
 size_t list_len(const list_t *h)
 {
