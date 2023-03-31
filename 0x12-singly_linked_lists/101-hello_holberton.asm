@@ -1,19 +1,17 @@
 section .data
-    hello db 'Hello, Holberton', 0Ah
-
+    hello:  db 'Hello, Holberton', 10, 0
 section .text
-    global _start
-
-_start:
-    mov rsp, rbp
-    sub rsp, 17
-
-    mov rdi, hello
-    xor eax, eax
-
-    call printf
-
-    xor eax, eax
-    mov rdi, eax
-    call exit
+    global main
+    extern printf
+main:
+    push    rbp
+    mov     rbp, rsp
+    sub     rsp, 16  
+    mov     edi, hello  
+    xor     eax, eax    
+    call    printf      
+    add     rsp, 16    
+    mov     eax, 0  
+    pop     rbp
+    ret
 
