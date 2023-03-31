@@ -1,6 +1,12 @@
-#ifndef LIST_H
-#define LIST_H
+#ifndef LISTS_H
+#define LISTS_H
 
+/*
+* Desc: header file containinf prototypes and definitions
+*	for all functions and types written in this proj
+*/
+
+#include <stdlib.h>
 
 /**
  * struct list_s - singly linked list
@@ -12,13 +18,13 @@
  */
 typedef struct list_s
 {
-    char *str;
-    unsigned int len;
-    struct list_s *next;
+	char *str;
+	unsigned int len;
+	struct list_s *next;
 } list_t;
 
-//typedef unsigned long size_t;
-#include <stddef.h>
 size_t print_list(const list_t *h);
+size_t list_len(const list_t *h);
 
-#endif
+#endif /* LISTS_H */
+
