@@ -6,12 +6,11 @@ section .text
 main:
     push    rbp
     mov     rbp, rsp
-    sub     rsp, 16  
-    mov     edi, hello  
-    xor     eax, eax    
-    call    printf      
-    add     rsp, 16    
-    mov     eax, 0  
+    sub     rsp, 16
+    mov     edi, hello
+    xor     eax, eax
+    call    printf
+    add     rsp, 16
+    mov     eax, 0
     pop     rbp
     ret
-
