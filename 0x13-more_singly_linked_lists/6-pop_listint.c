@@ -12,7 +12,7 @@ int pop_listint(listint_t **head)
 		return (0);
 
 	listint_t *temp = *head;
-	
+
 	return (temp->n);
 	*head = (*head)->next;
 	free(temp);
