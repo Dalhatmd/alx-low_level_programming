@@ -18,7 +18,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	while (mask != 0)
 	{
-		if (mask == ULONG_MAX)
+		if (mask == (unsigned int) - 1)
 		{
 			count += (sizeof(unsigned long int) * 8);
 			break;
