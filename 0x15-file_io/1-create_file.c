@@ -2,13 +2,15 @@
 #include <stdlib.h>
 int create_file(const char *filename, char *text_content)
 {
-	int f, len;
-	size_t written;
+	int f;
+	size_t written, len;
+
+	len = 0;
 
 	if (filename == NULL)
 		return (-1);
 
-	f = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+	f = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 	if (f == -1)
 		return (-1);
 
