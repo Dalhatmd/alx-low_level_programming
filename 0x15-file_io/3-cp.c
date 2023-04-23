@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "usage: %s file_from file_to\n", argv[0]);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit (97);
 	}
 
@@ -32,14 +32,12 @@ int main(int argc, char **argv)
 	from = open(file_from, O_RDONLY);
 	if (from == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: can't write to %d\n", from);
 		exit (98);
 	}
 	
 	to = open(file_to, O_WRONLY | O_TRUNC | 0664);
 	if (to == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: can't write to %s\n", file_to);
 		exit (99);
 	}
 
@@ -47,26 +45,22 @@ int main(int argc, char **argv)
 	{
 		if (write(to, buffer, nread) != nread)
 		{
-			dprintf(STDERR_FILENO, "Error: can't write to %d\n", to);
 			exit (99);
 		}
 	}
 
 	if (nread == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: can't read from file %d\n", from);
 		exit (98);
 	}
 
 	if (close(from) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: can't close fd %d\n", from);
 		exit (100);
 	}
 
 	if (close(to) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: can't close fd %d\n", to);
 		exit (100);
 	}
 
