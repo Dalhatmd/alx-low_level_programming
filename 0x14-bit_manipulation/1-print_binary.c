@@ -12,8 +12,10 @@ void print_binary(unsigned long int n)
 	mask = 1UL << (sizeof(unsigned long int) * 8 - 1);
 	started = 0;
 
-	while (mask > 0) {
-		if ((n & mask) == mask) {
+	while (mask > 0)
+	{
+		if ((n & mask) == mask)
+		{
 			putchar('1');
 			started = 1;
 		}
@@ -23,7 +25,6 @@ void print_binary(unsigned long int n)
 		}
 		mask >>= 1;
 	}
-	if (!started) {
+	if (!started)
 		putchar('0');
-	}
 }
