@@ -3,7 +3,7 @@
  * read_textfile - reads a text file and prints it to STDERR
  *
  * @filename: name of file to be printed
- * letters: number of characters to be printed
+ * @letters: number of characters to be printed
  *
  * Return: number of characters printed
  */
@@ -31,9 +31,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (nwrite != n)
 	{
 		free(buffer);
-		return(0);
+		return (0);
 	};
 	free(buffer);
-	close (o);
+	close(o);
 	return (nwrite);
 }
