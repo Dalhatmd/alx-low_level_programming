@@ -61,6 +61,11 @@ int main(int ac, char *av[])
         }
 
         r = read(from, buffer, 1024);
+	if (r == -1)
+	{
+		dprintf(STDERR_FILENO, "Error, Can't read from file %s\n", av[1]);
+		exit(98);
+	}
         to = open(av[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
         if (to == -1)
         {
