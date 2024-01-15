@@ -1,3 +1,4 @@
 #!/usr/bin/sh
-cat *.c | gcc -c -fPIC -x c - -o libdynamic.o
-gcc -shared -o libdynamic.so libdynamic.o
+gcc -Wall -Werror -Wextra -pedantic -c -fPIC *.c
+gcc -shared -o liball.so *.o
+export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
