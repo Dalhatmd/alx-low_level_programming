@@ -10,10 +10,7 @@
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int i;
-	hash_node_t *current = malloc(sizeof(hash_node_t));
-
-	if (current == NULL)
-		return (NULL);
+	hash_node_t *current;
 
 	if (ht == NULL || key == NULL)
 		return (NULL);
@@ -23,8 +20,8 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		current = ht->array[i];
 		while (current)
 		{
-			if (strcmp(ht->array[i]->key, key) == 0)
-				return (ht->array[i]->value);
+			if (strcmp(current->key, key) == 0)
+				return (current->value);
 			current = current->next;
 		}
 	}
